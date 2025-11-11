@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="x8WKnUq=Oy397DR0^?aQ">yhgjtk</variable><variable id="SM{uQO(`HU;z2ikwdfVf">bot</variable></variables><block type="device_gesture_event" id="$0-if7_!UQ+HoK`QCM^f" x="0" y="0"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_clear_display" id="6Z*D~~[u$WXH!S^.G=b9"><next><block type="music_playable_play" id="}e#pq*$b%FUSu=UHt6C?"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_tone_playable" id="j$DxttEsd6oO*$EDPw]?"><value name="note"><shadow type="device_note" id="h:1rqmQPN6KH+5ZB9.@f"><field name="name">262</field></shadow></value><value name="duration"><shadow type="device_beat" id="`SF^u*]P%]WVRcdvI{g:"><field name="fraction">BeatFraction.Whole</field></shadow></value></shadow><block type="music_tone_playable" id="8M+miz5+c(mQz#;?S!~G"><value name="note"><shadow type="device_note" id="$v_9%n}[Lkc^Xf6yrrH-"><field name="name">494</field></shadow></value><value name="duration"><shadow type="device_beat" id="icuSLF7YQ,`)ZyaL6md]"><field name="fraction">BeatFraction.Whole</field></shadow></value></block></value><next><block type="variables_set" id="6X/E`H`/zSI=2TD,}|Ih"><field name="VAR" id="SM{uQO(`HU;z2ikwdfVf">bot</field><value name="VALUE"><shadow type="math_number" id="W}9ZG`O_W8=RYptYkH9g"><field name="NUM">0</field></shadow><block type="device_random" id="5Cz7rA8dps?MY-p|/Ebk"><value name="min"><shadow type="math_number" id="lGDNOJ3vmvX]ZPes5FJ]"><field name="NUM">1</field></shadow></value><value name="limit"><shadow type="math_number" id="a(%_)3;C{xpVgb`1~7rV"><field name="NUM">3</field></shadow></value></block></value><next><block type="controls_if" id="fa3-6f0p/3cPHUekhlFT"><mutation elseif="1" else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="CCNia{|W%2p[ijR=b4%L" disabled-reasons="pxt_automatic_disabled"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="jR}e|5F+Stfbks)W9rHA"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="lpDNb66=NGkbTkiiWHXe"><field name="NUM">0</field></shadow><block type="variables_get" id="KX6l#tcOY7|0s1zRx5fZ"><field name="VAR" id="SM{uQO(`HU;z2ikwdfVf">bot</field></block></value><value name="B"><shadow type="math_number" id="f%epzMX-tdD@KNe|T50Q"><field name="NUM">1</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="Au)D)[`OmJO;EGR;Wj+2"><field name="LEDS">`
+        . . # # . 
+        . # # # # 
+        . # # # # 
+        . . # # . 
+        . . . . .
+        `</field></block></statement><value name="IF1"><shadow type="logic_boolean" id="FO1LxD^V^xUprg?Ocar("><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="@se`vkvpvtS%U2#|.h*M"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="s}@6+@F@Gg|%QTb,4A_0"><field name="NUM">0</field></shadow><block type="variables_get" id="pftR.;jxMKMuBDLhe9]z"><field name="VAR" id="SM{uQO(`HU;z2ikwdfVf">bot</field></block></value><value name="B"><shadow type="math_number" id="_X);-3VwYE_Sr.kTwp;5"><field name="NUM">2</field></shadow></value></block></value><statement name="DO1"><block type="device_show_leds" id="|jMmqD;K@/GX}k!o1(^#"><field name="LEDS">`
+        . # # # # 
+        . # # # # 
+        . # # # # 
+        . # # # # 
+        . # # # #
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="=%Klz[Xnm![@~)Y*HTg9"><field name="LEDS">`
+        # # . . # 
+        # # . # . 
+        . . # . . 
+        # # . # . 
+        # # . . #
+        `</field></block></statement></block></next></block></next></block></next></block></statement></block></xml>
