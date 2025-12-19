@@ -57,16 +57,28 @@ input.onButtonPressed(Button.AB, function () {
     // Первая часть: "Jingle bells, jingle bells"
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Half))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Half))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
     // ЛЯ
@@ -82,22 +94,34 @@ input.onButtonPressed(Button.AB, function () {
     // Вторая часть: "Jingle all the way"
     // СИ
     music.playTone(494, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СИ
     music.playTone(494, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СИ
     music.playTone(494, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СИ
     music.playTone(494, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СИ
     music.playTone(494, music.beat(BeatFraction.Quarter))
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
     // СОЛЬ
@@ -107,16 +131,28 @@ input.onButtonPressed(Button.AB, function () {
     // Третья часть: "Oh what fun it is to ride"
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Half))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Half))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
     // ЛЯ
@@ -132,18 +168,30 @@ input.onButtonPressed(Button.AB, function () {
     // Четвертая часть: "In a one horse open sleigh"
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // ЛЯ
     music.playTone(440, music.beat(BeatFraction.Quarter))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // СОЛЬ
     music.playTone(392, music.beat(BeatFraction.Quarter))
     // МИ
@@ -234,6 +282,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     music.playTone(196, music.beat(BeatFraction.Quarter))
     // МИ (верхнее)
     music.playTone(329, music.beat(BeatFraction.Quarter))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // "ро-ди-лась"
     // МИ
     music.playTone(329, music.beat(BeatFraction.Quarter))
@@ -246,6 +296,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     music.playTone(262, music.beat(BeatFraction.Quarter))
     // соль (нижнее)
     music.playTone(196, music.beat(BeatFraction.Quarter))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // соль (нижнее) - длинная нота
     music.playTone(196, music.beat(BeatFraction.Half))
     // пауза между фразами
@@ -256,6 +308,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     music.playTone(196, music.beat(BeatFraction.Quarter))
     // МИ (наверх)
     music.playTone(329, music.beat(BeatFraction.Quarter))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // "о-на"
     // МИ
     music.playTone(329, music.beat(BeatFraction.Quarter))
@@ -274,11 +328,15 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     music.playTone(392, music.beat(BeatFraction.Quarter))
     // ля (нижнее)
     music.playTone(220, music.beat(BeatFraction.Quarter))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // "и ле-том"
     // ля (нижнее)
     music.playTone(220, music.beat(BeatFraction.Quarter))
     // ФА (наверх)
     music.playTone(349, music.beat(BeatFraction.Quarter))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // ФА
     music.playTone(349, music.beat(BeatFraction.Quarter))
     // "строй-на-я"
@@ -295,6 +353,8 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     music.playTone(196, music.beat(BeatFraction.Quarter))
     // МИ (наверх)
     music.playTone(329, music.beat(BeatFraction.Quarter))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
     // МИ
     music.playTone(329, music.beat(BeatFraction.Quarter))
     // РЕ
