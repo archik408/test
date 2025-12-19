@@ -530,7 +530,7 @@ basic.forever(function () {
         }
         basic.clearScreen()
     }
-    if (mode == 3) {
+    if (mode == 0 || mode == 3) {
         for (let index = 0; index < 3; index++) {
             basic.showLeds(`
                 # . # . #
