@@ -50,13 +50,122 @@ input.onButtonPressed(Button.A, function () {
     playing = false
     basic.clearScreen()
 })
+input.onButtonPressed(Button.AB, function () {
+    // Jingle Bells
+    // Бодрый темп для рождественской песни
+    music.setTempo(80)
+    // Первая часть: "Jingle bells, jingle bells"
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Half))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Half))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // МИ
+    music.playTone(330, music.beat(BeatFraction.Quarter))
+    // ФА
+    music.playTone(349, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    // Вторая часть: "Jingle all the way"
+    // СИ
+    music.playTone(494, music.beat(BeatFraction.Quarter))
+    // СИ
+    music.playTone(494, music.beat(BeatFraction.Quarter))
+    // СИ
+    music.playTone(494, music.beat(BeatFraction.Quarter))
+    // СИ
+    music.playTone(494, music.beat(BeatFraction.Quarter))
+    // СИ
+    music.playTone(494, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Half))
+    // пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    // Третья часть: "Oh what fun it is to ride"
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Half))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Half))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // МИ
+    music.playTone(330, music.beat(BeatFraction.Quarter))
+    // ФА
+    music.playTone(349, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    // короткая пауза
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    // Четвертая часть: "In a one horse open sleigh"
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // ЛЯ
+    music.playTone(440, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // МИ
+    music.playTone(330, music.beat(BeatFraction.Quarter))
+    // СОЛЬ
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // МИ
+    music.playTone(330, music.beat(BeatFraction.Half))
+    // РЕ
+    music.playTone(294, music.beat(BeatFraction.Half))
+    // ДО
+    music.playTone(262, music.beat(BeatFraction.Whole))
+    // длинная пауза в конце
+    music.rest(music.beat(BeatFraction.Whole))
+})
 input.onButtonPressed(Button.B, function () {
     if (playing) {
         return
     }
     playing = true
     mode = 2
-    music.setTempo(88)
+    music.setTempo(92)
     // ===== ТЕМА 1 =====
     // A
     music.playTone(440, music.beat(BeatFraction.Whole))
@@ -114,6 +223,89 @@ input.onButtonPressed(Button.B, function () {
     mode = 0
     playing = false
     basic.clearScreen()
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    // В лесу родилась ёлочка
+    // Установлен темп чуть быстрее для детской песенки
+    music.setTempo(83)
+    // Куплет 1
+    // "В ле-су"
+    // соль (нижнее)
+    music.playTone(196, music.beat(BeatFraction.Quarter))
+    // МИ (верхнее)
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // "ро-ди-лась"
+    // МИ
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // РЕ
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    // МИ
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // "Ё-ЛОЧ-КА"
+    // ДО (вниз)
+    music.playTone(262, music.beat(BeatFraction.Quarter))
+    // соль (нижнее)
+    music.playTone(196, music.beat(BeatFraction.Quarter))
+    // соль (нижнее) - длинная нота
+    music.playTone(196, music.beat(BeatFraction.Half))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    // Куплет 2
+    // "В ле-су"
+    // соль (нижнее)
+    music.playTone(196, music.beat(BeatFraction.Quarter))
+    // МИ (наверх)
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // "о-на"
+    // МИ
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // ФА (наверх)
+    music.playTone(349, music.beat(BeatFraction.Quarter))
+    // "рос-ла"
+    // РЕ
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    // СОЛЬ (верхнее)
+    music.playTone(392, music.beat(BeatFraction.Half))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    // Припев
+    // "Зи-мой"
+    // СОЛЬ (верхнее)
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    // ля (нижнее)
+    music.playTone(220, music.beat(BeatFraction.Quarter))
+    // "и ле-том"
+    // ля (нижнее)
+    music.playTone(220, music.beat(BeatFraction.Quarter))
+    // ФА (наверх)
+    music.playTone(349, music.beat(BeatFraction.Quarter))
+    // ФА
+    music.playTone(349, music.beat(BeatFraction.Quarter))
+    // "строй-на-я"
+    // МИ (вниз)
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // РЕ
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    // ДО (вниз)
+    music.playTone(262, music.beat(BeatFraction.Half))
+    // пауза между фразами
+    music.rest(music.beat(BeatFraction.Sixteenth))
+    // "Зе-ле-на-я"
+    // соль (нижнее)
+    music.playTone(196, music.beat(BeatFraction.Quarter))
+    // МИ (наверх)
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // МИ
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // РЕ
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    // "бы-ла"
+    // МИ
+    music.playTone(329, music.beat(BeatFraction.Quarter))
+    // ДО (вниз)
+    music.playTone(262, music.beat(BeatFraction.Half))
+    // длинная пауза перед повторением
+    music.rest(music.beat(BeatFraction.Whole))
 })
 input.onGesture(Gesture.Shake, function () {
     if (playing) {
