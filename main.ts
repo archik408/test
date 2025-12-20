@@ -51,6 +51,11 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
 })
 input.onButtonPressed(Button.AB, function () {
+    if (playing) {
+        return
+    }
+    playing = true
+    mode = 4
     // Jingle Bells
     // Бодрый темп для рождественской песни
     music.setTempo(80)
@@ -206,6 +211,9 @@ input.onButtonPressed(Button.AB, function () {
     music.playTone(262, music.beat(BeatFraction.Whole))
     // длинная пауза в конце
     music.rest(music.beat(BeatFraction.Whole))
+    mode = 0
+    playing = false
+    basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
     if (playing) {
@@ -273,6 +281,11 @@ input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    if (playing) {
+        return
+    }
+    playing = true
+    mode = 5
     // В лесу родилась ёлочка
     // Установлен темп чуть быстрее для детской песенки
     music.setTempo(83)
@@ -366,6 +379,9 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     music.playTone(262, music.beat(BeatFraction.Half))
     // длинная пауза перед повторением
     music.rest(music.beat(BeatFraction.Whole))
+    mode = 0
+    playing = false
+    basic.clearScreen()
 })
 input.onGesture(Gesture.Shake, function () {
     if (playing) {
@@ -448,107 +464,111 @@ input.onGesture(Gesture.Shake, function () {
     music.play(music.tonePlayable(392, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
     // F#
     music.play(music.tonePlayable(370, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // F#
-    music.play(music.tonePlayable(370, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // G
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // F#
-    music.play(music.tonePlayable(370, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // E
-    music.play(music.tonePlayable(330, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // D
-    music.play(music.tonePlayable(294, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
-    // Good tidings for Christmas and a Happy New Year!
-    // A
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // B
-    music.play(music.tonePlayable(494, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // A
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // G
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // D
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // D
-    music.play(music.tonePlayable(587, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // E
-    music.play(music.tonePlayable(330, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // E
-    music.play(music.tonePlayable(330, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // E
-    music.play(music.tonePlayable(330, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // A
-    music.play(music.tonePlayable(440, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // F#
-    music.play(music.tonePlayable(370, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    // G
-    music.play(music.tonePlayable(392, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
-    mode = 0
-    playing = false
-    basic.clearScreen()
 })
 basic.forever(function () {
     if (mode == 1) {
-        for (let index = 0; index < 3; index++) {
-            basic.showLeds(`
-                # # . # #
-                . # . # .
-                . # # # .
-                . # . # .
-                # # . # #
-                `)
-            basic.pause(200)
-            basic.showLeds(`
-                . . . # .
-                . . # . .
-                . # # # .
-                . . # . .
-                . # . . .
-                `)
-            basic.pause(200)
-        }
-        basic.clearScreen()
+        basic.showLeds(`
+            # # . # #
+            . # . # .
+            . # # # .
+            . # . # .
+            # # . # #
+            `)
+        basic.pause(200)
+        basic.showLeds(`
+            . . . # .
+            . . # . .
+            . # # # .
+            . . # . .
+            . # . . .
+            `)
+        basic.pause(200)
     }
     if (mode == 2) {
-        for (let index = 0; index < 3; index++) {
-            basic.showLeds(`
-                . . # . .
-                . # # # .
-                # # # # #
-                . # # # .
-                . # # # .
-                `)
-            basic.pause(200)
-            basic.showLeds(`
-                . . # . .
-                . # # # .
-                # # # # #
-                . # . # .
-                . # # # .
-                `)
-            basic.pause(200)
-        }
-        basic.clearScreen()
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # # # # #
+            . # # # .
+            . # # # .
+            `)
+        basic.pause(200)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            # # # # #
+            . # . # .
+            . # # # .
+            `)
+        basic.pause(200)
     }
     if (mode == 0 || mode == 3) {
-        for (let index = 0; index < 3; index++) {
-            basic.showLeds(`
-                # . # . #
-                . # # # .
-                # # # # #
-                . # # # .
-                # . # . #
-                `)
-            basic.pause(200)
-            basic.showLeds(`
-                . # . # .
-                # # # # #
-                . # # # .
-                # # # # #
-                . # . # .
-                `)
-            basic.pause(200)
-        }
-        basic.clearScreen()
+        basic.showLeds(`
+            # . # . #
+            . # # # .
+            # # # # #
+            . # # # .
+            # . # . #
+            `)
+        basic.pause(200)
+        basic.showLeds(`
+            . # . # .
+            # # # # #
+            . # # # .
+            # # # # #
+            . # . # .
+            `)
+        basic.pause(200)
+    }
+    if (mode == 5) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . . # . .
+            . # # # .
+            # # # # #
+            `)
+        basic.pause(200)
+        basic.showLeds(`
+            . # . # .
+            . . # . .
+            . # # # .
+            . # # # .
+            . # # # .
+            `)
+        basic.pause(200)
+    }
+    if (mode == 4) {
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . # # # .
+            # # # # #
+            . . # . .
+            `)
+        basic.pause(200)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . # # # .
+            # # # # #
+            . # . . .
+            `)
+        basic.pause(200)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . # # # .
+            # # # # #
+            . . # . .
+            `)
+        basic.pause(200)
+        basic.showLeds(`
+            . . # . .
+            . # # # .
+            . # # # .
+            # # # # #
+            . . . # .
+            `)
     }
 })
